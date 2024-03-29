@@ -1,0 +1,18 @@
+dynamic getFirstElement(List<dynamic> list) {
+  if (list.isEmpty) {
+    return null; // Return null if the list is empty
+  } else {
+    return list[0]; // Return the first element of the list
+  }
+}
+
+void main() {
+  List<int> numbers = [1, 2, 3, 4, 5];
+  print('The first element of the list is: ${getFirstElement(numbers)}'); // Output: The first element of the list is: 1
+  
+  List<String> fruits = ['apple', 'banana', 'orange'];
+  print('The first element of the list is: ${getFirstElement(fruits)}'); // Output: The first element of the list is: apple
+  
+  List<dynamic> emptyList = [];
+  print('The first element of the list is: ${getFirstElement(emptyList)}'); // Output: The first element of the list is: null
+}
